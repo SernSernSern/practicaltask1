@@ -1,0 +1,61 @@
+.header
+	+desktop() 
+		padding 7em 5em 4em 5em
+		margin 0em
+		border 0
+		align-items center
+		vertical-align baseline
+		box-sizing inherit
+		display flex
+		color rgba(255, 255, 255, 0.65)
+	+mobile()
+		text-align center
+		display flex
+		justify-content center
+		flex-direction column
+		align-items center
+		vertical-align baseline
+		padding 4em 1.5em 1em 1.5em
+
+.text
+	+desktop()
+		margin-top 1em
+		margin-right 0px
+		margin-bottom 0.25em
+		font-family 'SourceSansPro-Light'
+		margin-left 0px
+		font-weight 300
+		text-align center
+		flex 1
+		letter-spacing: -0.025em
+		font-size 3.25em
+		color #ffffff
+	+mobile()
+		flex 1
+		font-family 'SourceSansPro-Light'
+		color #ffffff
+		font-size 2.5em
+		text-align center
+		margin 0 0 0.25em 0
+		font-weight 300
+		
+
+.smaltext
+	+desktop()
+		margin-top 0em
+		font-family 'SourceSansPro-Light'
+		font-size: 1.25em
+		margin-right 0px
+		margin-bottom 2em
+		text-align center
+		margin-left 0px
+		flex 1
+		letter-spacing -0.025em
+		color rgba(255, 255, 255, 0.65)
+	+mobile()
+		flex 1
+		font-family 'SourceSansPro-Light'
+		text-align center
+		font-size 1em
+		color rgba(255, 255, 255, 0.65)
+		margin 0 0 2em 0

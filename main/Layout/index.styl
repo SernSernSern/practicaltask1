@@ -1,0 +1,42 @@
+$menuHeight = 6u
+
+.sidebar
+  background-color #eee
+
+  &-menu
+    padding-top 2u
+
+.menu
+  background-color rgba(black, 0.02)
+  height $menuHeight
+  z-index 1
+  align-items center
+  padding 0 2u
+  border-bottom-width 1px
+  border-bottom-color rgba(black, 0.05)
+
+.logo
+  margin-left 2u
+  color $UI.colors.secondaryText
+  font(xl)
+
+.body
+  +desktop()
+    flex 1
+    background-color #935d8c
+    overflow auto
+    background-image url("overlay.png"), linear-gradient(45deg, #e37682 15%, #5f4d93 85%)
+  +mobile()
+    flex 1
+    background-color #935d8c
+    overflow auto
+    background-image url("overlay.png"), linear-gradient(45deg, #e37682 15%, #5f4d93 85%)
+.wrapper
+  +desktop()
+    margin auto 0
+	  padding 0 24u
+  +mobile()
+    margin 0 auto
+    display flex
+    padding 0 0
+    max-width calc(100% - 2em)
