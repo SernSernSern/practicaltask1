@@ -1,0 +1,113 @@
+.selection1
+    +desktop()
+        width: calc(50% - 2em)
+        margin-left: 2em
+    +mobile()
+        width 100%
+        margin-left 0
+        margin-bottom 3em
+.selection2
+    +desktop()
+        width: calc(50% - 2em)
+        margin-left: 2em
+    +mobile()
+        width 100%
+        margin-left 0
+        margin-bottom 3em
+
+.flexer
+    +desktop()
+        flex-wrap wrap
+        padding 5em 5em 3em 5em
+        display flex
+        flex-direction row
+        width calc(100% + 2em)
+        margin 0 0 3em -2em
+    +mobile()
+        display block
+        padding 2.5em 1em 0.5em 1em
+        margin 0 0 3em 0
+        width 100%
+        color rgba(255, 255, 255, 0.65)
+
+.view
+    +desktop()
+        margin: 0 0 2em 0
+
+.text1
+    +desktop()
+        font-size 1.5em
+        font-family 'SourceSansPro-Light'
+        color #ffffff
+        margin 0 0 0.7em 0
+    +mobile()
+        font-family 'SourceSansPro-Light'
+        color: #ffffff
+        font-size 1.5em
+        margin 0 0 0.7em 0
+        letter-spacing -0.025em
+    
+
+.text2
+    +desktop()
+        font-family 'SourceSansPro-Light'
+        font-size 17pt
+        color #ffffff
+        margin 0 0 2em 0
+    +mobile()
+        font-family 'SourceSansPro-Light'
+        margin 0 0 2em 0
+        font-size 1em
+        color #ffffff
+
+.ui
+    +desktop()
+        display flex
+        cursor default
+        list-style none
+        margin-left -1em
+.li
+    +desktop()
+        padding 0 43%
+
+.ul
+    +desktop()
+        margin: 0 0 2em 0
+        flex-direction row
+    +mobile()
+        display: flex
+        margin 0 0 2em 0
+        height: 35
+        flex-direction row
+        justify-content space-between
+
+.liua
+    +desktop()
+        padding 0 0.65em 0 0
+        display inline-block
+        color rgba(255, 255, 255, 0.65)
+
+.roundButton1
+    +desktop()
+        height: 35
+        width 35
+        background-color rgba(255, 255, 255, 0.35)
+        justify-content 'center'
+        border-radius 100%
+        align-items 'center'
+        color #ffffff
+        flex 1
+        display inline-block
+    +mobile()
+        height: 35
+        width 35
+        background-color rgba(255, 255, 255, 0.35)
+        justify-content 'center'
+        border-radius 100%
+        align-items 'center'
+        color #ffffff
+        flex 1
+        display inline-block
+        
+        
+    
