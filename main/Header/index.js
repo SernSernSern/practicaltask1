@@ -7,15 +7,12 @@ import './index.styl'
 
 const Header = prop => {
 
-    return pug`
-        View.header
-            Logo
-            Text.text  Stellar
-            Text.smaltext Just another free, fully responsive site template
-            
-    `
-
-    
+  return pug`
+    View.header
+      Logo
+      Text.text  Stellar
+      Text.smaltext Just another free, fully responsive site template        
+  `
 }
 
 export default Header;

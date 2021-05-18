@@ -1,61 +1,35 @@
 .header
-	+desktop() 
-		padding 7em 5em 4em 5em
-		margin 0em
-		border 0
-		align-items center
-		vertical-align baseline
-		box-sizing inherit
-		display flex
-		color rgba(255, 255, 255, 0.65)
-	+mobile()
-		text-align center
-		display flex
-		justify-content center
-		flex-direction column
-		align-items center
-		vertical-align baseline
-		padding 4em 1.5em 1em 1.5em
+  text-align center
+  justify-content center
+  align-items center
+  vertical-align baseline
+  color rgba(255, 255, 255, 0.65)
+  padding 8u 4u 2u 4u
+  +desktop() 
+    padding 16u 10u 10u 8u
+  +tablet()
+    paddinng 12u 6u 6u 6u
+  +wide()
+    paddinng 18u 12u 12u 10u
 
 .text
-	+desktop()
-		margin-top 1em
-		margin-right 0px
-		margin-bottom 0.25em
-		font-family 'SourceSansPro-Light'
-		margin-left 0px
-		font-weight 300
-		text-align center
-		flex 1
-		letter-spacing: -0.025em
-		font-size 3.25em
-		color #ffffff
-	+mobile()
-		flex 1
-		font-family 'SourceSansPro-Light'
-		color #ffffff
-		font-size 2.5em
-		text-align center
-		margin 0 0 0.25em 0
-		font-weight 300
-		
+  flex 1
+  margin-top 2u
+  font-family 'SourceSansPro-Light'
+  color #ffffff
+  font(xxxl)
+  text-align center
+
+
 
 .smaltext
-	+desktop()
-		margin-top 0em
-		font-family 'SourceSansPro-Light'
-		font-size: 1.25em
-		margin-right 0px
-		margin-bottom 2em
-		text-align center
-		margin-left 0px
-		flex 1
-		letter-spacing -0.025em
-		color rgba(255, 255, 255, 0.65)
-	+mobile()
-		flex 1
-		font-family 'SourceSansPro-Light'
-		text-align center
-		font-size 1em
-		color rgba(255, 255, 255, 0.65)
-		margin 0 0 2em 0
+  flex 1
+  font-family 'SourceSansPro-Light'
+  text-align center
+  font(l)
+  color rgba(255, 255, 255, 0.65)
+  margin 4u 0 0 0
+  +desktop()
+    font(xl)
+  +wide()
+    font(xl)

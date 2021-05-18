@@ -1,113 +1,99 @@
-.selection1
+.view 
+  &.footer
+    display block
+    padding 6u 2u 2u 2u
+    width 100%
+    color rgba(255, 255, 255, 0.65)
     +desktop()
-        width: calc(50% - 2em)
-        margin-left: 2em
-    +mobile()
-        width 100%
-        margin-left 0
-        margin-bottom 3em
-.selection2
+      flex-wrap wrap
+      display flex
+      padding 10u 10u 6u 10u
+      flex-direction row
+      width 100%
+    +tablet()
+      lex-wrap wrap
+      display flex
+      padding 8u 8u 4u 8u
+      flex-direction row
+      width 100%
+    +wide()
+      lex-wrap wrap
+      display flex
+      padding 12u 12u 8u 12u
+      flex-direction row
+      width 100%
+  &.selection
+    &.s1
+      width 100%
+      +desktop()
+        width 50% - 1u
+        margin-left 4u
+      +tablet()
+        width 50% - 1u
+        margin-left 4u
+      +wide()
+        width 50% - 1u
+        margin-left 4u
+    &.s2
+      width 100%
+      margin-left 0
+      margin-top 6u
+      +desktop()
+        width 50% 
+        margin-left 4u
+        padding-left 8u
+      +tablet()
+        width 50% 
+        margin-left 4u
+        padding-left 8u
+      +wide()
+        width 50% 
+        margin-left 4u
+        padding-left 8u
+    &.adress
+      margin-top 4u
+  &.ul
+    margin-top 4u
+    flex-direction row
+    justify-content space-between
     +desktop()
-        width: calc(50% - 2em)
-        margin-left: 2em
-    +mobile()
-        width 100%
-        margin-left 0
-        margin-bottom 3em
-
-.flexer
+      justify-content left
+    +tablet()
+      justify-content left
+    +wide()
+      justify-content left
+  &.li
     +desktop()
-        flex-wrap wrap
-        padding 5em 5em 3em 5em
-        display flex
-        flex-direction row
-        width calc(100% + 2em)
-        margin 0 0 3em -2em
-    +mobile()
-        display block
-        padding 2.5em 1em 0.5em 1em
-        margin 0 0 3em 0
-        width 100%
-        color rgba(255, 255, 255, 0.65)
-
-.view
-    +desktop()
-        margin: 0 0 2em 0
-
-.text1
-    +desktop()
-        font-size 1.5em
-        font-family 'SourceSansPro-Light'
-        color #ffffff
-        margin 0 0 0.7em 0
-    +mobile()
-        font-family 'SourceSansPro-Light'
-        color: #ffffff
-        font-size 1.5em
-        margin 0 0 0.7em 0
-        letter-spacing -0.025em
-    
-
-.text2
-    +desktop()
-        font-family 'SourceSansPro-Light'
-        font-size 17pt
-        color #ffffff
-        margin 0 0 2em 0
-    +mobile()
-        font-family 'SourceSansPro-Light'
-        margin 0 0 2em 0
-        font-size 1em
-        color #ffffff
-
-.ui
-    +desktop()
-        display flex
-        cursor default
-        list-style none
-        margin-left -1em
-.li
-    +desktop()
-        padding 0 43%
-
-.ul
-    +desktop()
-        margin: 0 0 2em 0
-        flex-direction row
-    +mobile()
-        display: flex
-        margin 0 0 2em 0
-        height: 35
-        flex-direction row
-        justify-content space-between
-
-.liua
-    +desktop()
-        padding 0 0.65em 0 0
-        display inline-block
-        color rgba(255, 255, 255, 0.65)
-
-.roundButton1
-    +desktop()
-        height: 35
-        width 35
-        background-color rgba(255, 255, 255, 0.35)
-        justify-content 'center'
-        border-radius 100%
-        align-items 'center'
-        color #ffffff
-        flex 1
-        display inline-block
-    +mobile()
-        height: 35
-        width 35
-        background-color rgba(255, 255, 255, 0.35)
-        justify-content 'center'
-        border-radius 100%
-        align-items 'center'
-        color #ffffff
-        flex 1
-        display inline-block
-        
-        
-    
+      margin-left 1u
+      padding 0 0
+      flex-direction row
+      color rgba(255, 255, 255, 0.65)
+    +tablet()
+      margin-left 1u
+      padding 0 0
+      flex-direction row
+      color rgba(255, 255, 255, 0.65)
+    +wide()
+      margin-left 1u
+      padding 0 0
+      flex-direction row
+      color rgba(255, 255, 255, 0.65)
+.text
+  font-family 'SourceSansPro-Light'
+  color #ffffff
+  &.head
+    font(xxl)
+  &.p
+    font(l)
+    margin-top 4u  
+.button
+  &.b1
+    height 35
+    width 35
+    background-color rgba(255, 255, 255, 0.35)
+    justify-content center
+    radius(circle)
+    align-items center
+    color #ffffff
+    flex 1   
+   
