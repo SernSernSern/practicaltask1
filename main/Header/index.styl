@@ -4,13 +4,13 @@
   align-items center
   vertical-align baseline
   color rgba(255, 255, 255, 0.65)
-  padding 8u 4u 2u 4u
-  +desktop() 
-    padding 16u 10u 10u 8u
+  padding 8u 4u 2u
   +tablet()
-    paddinng 12u 6u 6u 6u
+    padding 12u 6u 6u
+  +desktop() 
+    padding 16u 10u 8u
   +wide()
-    paddinng 18u 12u 12u 10u
+    padding 18u 12u 10u
 
 .text
   flex 1
@@ -19,17 +19,9 @@
   color #ffffff
   font(xxxl)
   text-align center
-
-
-
-.smaltext
-  flex 1
-  font-family 'SourceSansPro-Light'
-  text-align center
-  font(l)
-  color rgba(255, 255, 255, 0.65)
-  margin 4u 0 0 0
-  +desktop()
-    font(xl)
-  +wide()
-    font(xl)
+  &.small  
+    font(l)
+    color rgba(255, 255, 255, 0.65)
+    margin-top 4u
+    +tablet()
+      font(xl)

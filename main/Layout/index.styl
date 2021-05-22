@@ -23,13 +23,11 @@ $menuHeight = 6u
 .body
   flex 1
   background-color #935d8c
-  overflow auto
-  background-image url("overlay.png"), linear-gradient(45deg, #e37682 15%, #5f4d93 85%)
 .wrapper
   +mobile()
-    padding 0 0
+    padding 0
+  +tablet()
+    margin 0 auto
   +desktop()
     margin auto 0
 	  padding 0 24u
-  +tablet()
-    margin 0 auto

@@ -4,218 +4,147 @@
   radius(m)
   
 .section
-  padding 6u 4u 2u 4u
-  +desktop()
-    padding 10u 10u 6u 10u
+  padding 6u 4u 2u
+  text-align center
+  border-top solid 1px #dddddd
   +tablet()
-    padding 8u 8u 4u 8u
+    padding 8u 8u 4u
+  +desktop()
+    padding 10u 10u 6u 
   +wide()
-    padding 12u 12u 8u 12u
-
-  &.s1
-    color #636363
-    border-top solid 1px #dddddd
-    text-align center 
-    +desktop()
-      flex-direction row
-      justify-content space-around
+    padding 12u 12u 8u
+  &.intro
     +tablet()
       flex-direction row
       justify-content space-around
-    +wide()
-      flex-direction row
-      justify-content space-around
-    
-  &.s2
-    text-align center
-    border-top solid 1px #dddddd
     
 
 .text
   color #636363
   text-align center
   font-family 'SourceSansPro-Light'
-  &.h1
+  &.headerOne
     margin-top 2u
     font(xxxl)
-  &.h2
+  &.headerTwo
     margin-top 2u
     font(xxl)
-  &.smal
+  &.small
     margin-top 4u
     font(xl)
     &.center
-      +desktop()
-        width 60u
       +tablet()
         width 40u
+      +desktop()
+        width 60u
       +wide()
         width 80u
-  &.xl
+  &.extraSmall
     font(l)
+  &.textstyle
+    color #ffffff
+    font(xxxl)
 .div
-  &.d1
-    align-items center
-    text-align center
+  text-align center
+  align-items center
+  &.features
     flex-direction column-reverse
-    +desktop()
-      flex 1
-      flex-direction row
     +tablet()
       flex 1
       flex-direction row
-    +wide()
-      flex 1 
-      flex-direction row
-  &.d2
-    +desktop()
-      flex 1
+  &.spotlight
     +tablet()
       flex 1
-    +wide()
-      flex 1
-  &.d3
-    text-align center
-    align-items center
-  &.d4
+  &.major
     width 100%
-    justify-content center
-    align-items center
     margin-top 4u
+    +tablet()
+      flex-direction row
+      justify-content space-around
     +desktop()
       margin-top 6u
-      flex-direction row
-      justify-content space-around
-    +tablet()
-      margin-top 4u
-      flex-direction row
-      justify-content space-around
     +wide()
       margin-top 6u
-      flex-direction row
-      justify-content space-around
   &.column
     margin-top 4u
-    width 100%
     justify-content center
-    +desktop()
-      flex-direction row
-      margin-top 6u 
-      justify-content space-around
-      align-items center
     +tablet()
       flex-direction row
-      margin-top 4u 
-      justify-content space-around
-      align-items center
-    +wide()
-      flex-direction row
-      margin-top 8u 
-      justify-content space-around
-      align-items center
-    
-  &.li
-    margin-top 4u
-    +desktop()
-      margin-top 0
-    +tablet()
-      margin-top 2
-    +wide()
-      margin-top 0
-  &.text
-    +desktop()
-      margin-top 2u
-    &.intext
       margin-top 4u
-      text-align justify
-      +desktop()
-        flex-direction row
-        width 100%
-        margin-top 6u
-      +tablet()
-        flex-direction row
-        width 100%
-        margin-top 4u
-      +wide()
-        flex-direction row
-        width 100%
-        margin-top 8u
+      width 100% 
+      justify-content space-around
+      align-items center
+    +desktop()
+      margin-top 6u 
+    +wide()
+      margin-top 8u
+  &.intext
+    margin-top 4u
+    text-align justify
+    +tablet()
+      flex-direction row
+      width 100%
+    +desktop()
+      margin-top 6u
+    +wide()
+      margin-top 8u
+  &.margin
+    margin-top 4u
 .style
-  padding 4u
-  flex 1
+  padding 8u
   text-align center
   color #ffffff
-  &.s1
+  align-items center
+  justify-content center
+  +tablet()
+    flex 1
+    padding 4u
+  &.pink
     background-color #efa8b0
     border-bottom-left-radius 0
     border-top-right-radius 1u
     border-top-left-radius 1u
-    +desktop()
-      border-bottom-left-radius 1u
-      border-top-right-radius 0
     +tablet()
       border-bottom-left-radius 1u
       border-top-right-radius 0
-    +wide()
-      border-bottom-left-radius 1u
-      border-top-right-radius 0
     
-  &.s2
+  &.liliac
     background-color #c79cc8
-  &.s3
+  &.purple
     background-color #a89cc8
-  &.s4
-    background-color #9bb2e1
-    
-  &.s5
+  &.blue
+    background-color #9bb2e1  
+  &.sky
     background-color #8cc9f0
-    
     border-bottom-right-radius 1u
     border-top-right-radius 0
     border-bottom-left-radius 1u
-    +desktop()
-      border-top-right-radius 1u
-      border-bottom-left-radius 0
     +tablet()
       border-top-right-radius 1u
       border-bottom-left-radius 0
-    +wide()
-      border-top-right-radius 1u
-      border-bottom-left-radius 0
+
 .button
-  &.b1
-    margin-top 4u
-    +desktop()
-      padding 0 43%
-    +wide()
-      padding 0 43%
+  margin-top 4u
+  margin-left 2u
+  &.one
     +tablet()
       padding 0 43%
-  &.b2
+  &.row
     flex-direction row
-    margin-top 4u
-    +desktop()
-      width 100%
-      justify-content center
+    
     +tablet()
-      width 100%
       justify-content center
     +wide()
-      width 100%
-      justify-content center
       margin-top 8u
-  &.bself
-    padding 0 2u
+
+  &.first
+    margin-left 0u
 
 .image
   border-color #dddddd
   height 32u
   width 32u
-  &.i1
-    radius(circle)
-    border solid 1px
-    color #636363
-    text-align center
-  &.i2
-    radius(circle)
-    color #efa8b0
+  radius(circle)
+  border solid 1px
+  color #636363
+  text-align center
