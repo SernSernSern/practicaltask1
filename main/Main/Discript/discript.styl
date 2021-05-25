@@ -1,0 +1,57 @@
+.root
+  padding 6u 4u 2u
+  border-top solid 1px #dddddd
+  justify-content center
+  +tablet()
+    padding 8u 8u 4u
+    flex-direction row
+  +desktop()
+    padding 10u 10u 6u 
+  +wide()
+    padding 12u 12u 8u
+
+.div
+  text-align center
+  align-items center
+
+.header
+  color #636363
+  margin-top 2u
+  font(xxxl)
+
+.small
+  color #636363
+  text-align center
+  margin-top 4u
+  width 100%
+  font(xl)
+  +tablet()
+    width 70%
+  &.first
+    color #ffffff
+
+.extraSmall
+  color #636363
+  text-align center
+  font(l)
+  &.first
+    color #ffffff
+
+.row
+  margin-top 4u
+  flex-direction row
+
+.button
+  margin-top 4u
+  width 15u
+  height 6u
+  justify-content center
+  align-self center
+  margin-left 2u
+  border solid 1px #dddddd
+  radius(l)
+  +tablet()
+    width 30u
+  &.first
+    margin-left 0u
+    background-color #9acff2

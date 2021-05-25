@@ -1,0 +1,107 @@
+.pink
+  background-color #efa8b0
+.liliac
+  background-color #c79cc8
+.purple
+  background-color #a89cc8
+.blue
+  background-color #9bb2e1  
+.sky
+  background-color #8cc9f0
+.white
+  color #ffffff
+.grey
+  color #636363
+.root
+  padding 6u 4u 2u
+  text-align center
+  border-top solid 1px #dddddd
+  +tablet()
+    padding 8u 8u 4u
+  +desktop()
+    padding 10u 10u 6u 
+  +wide()
+    padding 12u 12u 8u
+
+.div
+  text-align center
+  align-items center
+
+.column
+    text-align center
+    align-items center
+    margin-top 4u
+    justify-content center
+    +tablet()
+      flex-direction row
+      width 100% 
+      justify-content space-around
+    +desktop()
+      margin-top 6u 
+    +wide()
+      margin-top 8u
+
+.style
+  padding 8u
+  text-align center
+  align-items center
+  justify-content center
+  +tablet()
+    flex 1
+    padding 4u
+  &.first
+    border-bottom-left-radius 0
+    border-top-right-radius 1u
+    border-top-left-radius 1u
+    +tablet()
+      border-bottom-left-radius 1u
+      border-top-right-radius 0
+  &.last
+    border-bottom-right-radius 1u
+    border-top-right-radius 0
+    border-bottom-left-radius 1u
+    +tablet()
+      border-top-right-radius 1u
+      border-bottom-left-radius 0
+
+.button
+  margin-top 4u
+  width 30u
+  height 6u
+  align-items center
+  justify-content center
+  align-self center
+  border solid 1px #dddddd
+  radius(l)
+
+.header
+  margin-top 2u
+  font(xxxl)
+  color #636363
+  text-align center
+.small
+  color #636363
+  margin-top 4u
+  font(xl)
+  &.center
+    +tablet()
+      width 40u
+    +desktop()
+      width 60u
+    +wide()
+      width 80u
+.extraSmall
+  font(l)
+.textstyle
+  margin-top 2u
+  color #ffffff
+  font(xxxl)
+
+.textColumn
+  margin-top 6u
+  color #636363
+  font(xxl)
+  columns 40u 2
+  column-gap 4u
+  text-align justify
+  

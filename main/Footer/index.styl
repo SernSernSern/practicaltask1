@@ -1,67 +1,78 @@
-.view 
-  &.footer
-    padding 6u 2u 2u 2u
-    width 100%
-    color rgba(255, 255, 255, 0.65)
-    +tablet()
-      flex-wrap wrap
-      padding 8u 8u 4u
-      flex-direction row
-    +desktop()
-      padding 10u 10u 6u
-    +wide()
-      padding 12u 12u 8u
-  &.selection
-    &.about
-      width 100%
-      +tablet()
-        width 45%
-        margin-left 4u
-    &.adress
-      width 100%
-      margin-left 0u
-      margin-top 6u
-      +tablet()
-        width 50% 
-        margin-left 4u
-        margin-top 0u
-        padding-left 8u
-  &.marg
-    margin-top 4u
-  &.icons
-    margin-top 4u
-    flex-direction row
-    justify-content space-between
-    +tablet()
-      justify-content start
 
-  &.icon
+.root
+  padding 6u 2u 2u 2u
+  color #ffffff 
+  +tablet()
+    flex-wrap wrap
+    padding 8u 8u 4u
+    flex-direction row
+  +desktop()
+    padding 10u 10u 6u
+  +wide()
+    padding 12u 12u 8u
+.selection
+  &.about
+    +tablet()
+      flex 1
+      margin-left 4u
+  &.adress
+    margin-left 0u
+    margin-top 6u
+    +tablet()
+      flex 1
+      margin-left 4u
+      margin-top 0u
+      padding-left 8u
+
+.icons
+  margin-top 4u
+  flex-direction row
+  justify-content space-between
+  +tablet()
+    justify-content start
+
+  &.first
     flex-direction row
     +tablet()
-      margin-left 2u
+      margin-left 0
       color rgba(255, 255, 255, 0.65)
-    &.first
-      flex-direction row
-      +tablet()
-        margin-left 0
-        color rgba(255, 255, 255, 0.65)
     
     
-.text
-  font-family 'SourceSansPro-Light'
+.title
   color #ffffff
-  &.head
-    font(xxl)
-  &.small
-    font(xl)
-    margin-top 4u  
+  font(xxl)
+.small
+  color rgba(255, 255, 255, 0.65)
+  font(xl)
+  margin-top 4u
+  &.marg
+    margin-left 6u
+  &.nomarg
+    margin-top 0u
+.icon
+  height 6u
+  width 6u
+  background-color rgba(255, 255, 255, 0.35)
+  justify-content center
+  radius(circle)
+  margin-left 2u
+  text-align center
+  align-items center
+  color #ffffff 
+  &.first
+    margin-left 0u
+
+.row
+  flex-direction row
+
 .button
-    height 4u
-    width 4u
-    background-color rgba(255, 255, 255, 0.35)
-    justify-content center
-    radius(circle)
-    align-items center
-    color #ffffff
-    flex 1   
-   
+  margin-top 4u
+  width 30u
+  height 6u
+  align-items center
+  justify-content center
+  border solid 1px #dddddd
+  radius(l)
+
+.copyright
+  align-items center

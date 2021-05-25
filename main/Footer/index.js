@@ -14,27 +14,41 @@ const but = [
 
 const Footer = prop => {
   return pug`
-    View.view(styleName='footer')
-      View.view(styleName='selection about')
-        Text.text(styleName='head') Aliquam sed mauris
-        Text.text(styleName='small') Sed lorem ipsum dolor sit amet et nullam consequat feugiat consequat magna adipiscing tempus etiam dolore veroeros. eget dapibus mauris. Cras aliquet, nisl ut viverra sollicitudin, ligula erat egestas velit, vitae tincidunt odio.
-        
-                        
-      View.view.selection.adress
-        Text.text(styleName='head') Etiam feugiat
-        View.view(styleName='marg')
-          Text.text(styleName='small') Address     1234 Somewhere Road • Nashville, TN 00000 • USA
-          Text.text(styleName='small') Phone     (000) 000-0000 x 0000
-          Text.text(styleName='small') Email     information@untitled.tld
-        View.view(styleName='icons')
+    View.root
+      View.selection.about
+        Text.title Aliquam sed mauris
+        Text.small Sed lorem ipsum dolor sit amet et nullam consequat feugiat consequat magna adipiscing tempus etiam dolore veroeros. eget dapibus mauris. Cras aliquet, nisl ut viverra sollicitudin, ligula erat egestas velit, vitae tincidunt odio.
+        TouchableOpacity.button
+          Text.small.nomarg Learn more                 
+      View.selection.adress
+        Text.title Etiam feugiat
+          View
+            View.row
+              Text.small Address
+              Text.small.marg 1234 Somewhere Road • Nashville, TN 00000 • USA
+            View.row
+              Text.small Phone
+              Text.small.marg (000) 000-0000 x 0000
+            View.row
+              Text.small Email
+              Text.small.marg information@untitled.tld
+        View.icons
           each item, index in but
-            View.view(styleName = [item.view, {first: !index}])
-              TouchableOpacity.button
-                FontAwesomeIcon(
-                  icon=item.icon,
-                  color="#ffffff"
-                )
-          
+            TouchableOpacity.icon(styleName={first:!index})
+              FontAwesomeIcon(
+                icon=item.icon,
+                color="#ffffff"
+                size=24
+              )
+    View.copyright
+      View.row
+        Text.small © Untitled. Design: 
+        TouchableOpacity
+          Text.small HTML5 UP
+        Text.small . Demo Images: 
+        TouchableOpacity
+          Text.small Unsplash
+
   `
 }
 
