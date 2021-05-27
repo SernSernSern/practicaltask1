@@ -3,17 +3,17 @@
   align-items center
   border-top solid 1px #dddddd
   +tablet()
-    padding 8u 8u 4u
+    padding 6u 6u 2u
   +desktop()
     padding 10u 10u 6u 
   +wide()
     padding 12u 12u 8u
 
-.div
+.item
   text-align center
   align-items center
   +tablet()
-    flex 1
+    width 20%
 
 .major
   margin-top 4u
@@ -25,20 +25,25 @@
   +wide()
     margin-top 6u
 
-.margin
-  margin-top 4u
-
-.header
-  margin-top 2u
-  color #636363
-  text-align center
-  font(xxxl)
 .title
   margin-top 2u
   color #636363
   text-align center
   font(xxl)
-.extraSmall
+  
+.itemTitle
+  margin-top 2u
+  color #636363
+  text-align center
+  font(xl)
+
+.itemText
+  font(l)
+  margin-top 4u
+  color #636363
+  text-align center
+
+.buttonText
   font(l)
   color #636363
   text-align center
@@ -50,9 +55,12 @@
   border solid 1px #dddddd
   color #636363
   +tablet()
-    height 20u 
-    width 20u
+    height 14u 
+    width 14u
   +desktop()
+    height 22u
+    width 22u
+  +wide()
     height 28u
     width 28u
 

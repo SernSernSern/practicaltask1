@@ -1,7 +1,7 @@
 import React from 'react'
 import { View, Image, Text, TouchableOpacity } from 'react-native'
 import { BASE_URL } from '@env'
-import './major.styl'
+import './index.styl'
 
 const base = BASE_URL
 const major = [
@@ -25,28 +25,20 @@ const major = [
   }
 ]
 
-const Maj = prop => {
-  return pug`
-    View.div
-      Image.image(
-        source={uri: base + prop.image}
-      )
-      Text.header=prop.head
-      View.margin
-        Text.extraSmall=prop.texts
-    `
-}
-
-const Major = prop => {
+const Major = () => {
   return pug`
     View.root
-      Text.header Magna veroeros
+      Text.title Magna veroeros
       View.major
         each item in major
-          Maj(...item)
-      
+          View.item
+            Image.image(
+              source={uri: base + item.image}
+            )
+            Text.itemTitle=item.head
+            Text.itemText=item.texts
       TouchableOpacity.button
-        Text.extraSmall Learn more
+        Text.buttonText Learn more
   `
 }
 

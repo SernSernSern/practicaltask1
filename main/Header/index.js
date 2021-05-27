@@ -3,18 +3,18 @@ import { View, Text, TouchableOpacity } from 'react-native'
 import Logo from './logo.svg'
 import './index.styl'
 
-const Header = prop => {
+const Header = () => {
   return pug`
     View.root
       Logo
       Text.title Stellar
       View.row
-        Text.small Just another free, fully responsive site template
-        TouchableOpacity
-          Text.small  @ajlkn
-        Text.small  for 
-        TouchableOpacity
-          Text.small HTML5 UP
+        Text.description Just another free, fully responsive site template
+        TouchableOpacity.touchableDescription
+          Text.description.url  @ajlkn
+        Text.description  for 
+        TouchableOpacity.touchableDescription
+          Text.description.url HTML5 UP
   `
 }
 

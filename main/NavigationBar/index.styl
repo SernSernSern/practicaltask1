@@ -11,16 +11,19 @@
     border-top-right-radius 0.5u
 
 .button
-  width 18u
-  height 6u
-  align-items center
-  justify-content center
-  radius(l)
-  margin-left 4u
-  &.first
-    margin-left 0u
-    background-color white
-
+  +tablet()
+    width 6u
+    height 6u
+    align-items center
+    justify-content center
+    radius(l)
+    margin-left 4u
+    &.first
+      margin-left 0u
+      background-color white
+  +desktop()
+    width 18u
+    height 6u
 .title
   color #636363
   font(xl)

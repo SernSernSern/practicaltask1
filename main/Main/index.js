@@ -1,18 +1,18 @@
 import React from 'react'
 import { View } from 'react-native'
-import StaticItem from './Item/staticItem'
-import Major from './Major/major'
-import Intro from './Intro/intro'
-import Discript from './Discript/discript'
+import StaticItems from './StaticItems'
+import Major from './Major'
+import Intro from './Intro'
+import Description from './Description'
 import './index.styl'
 
 const Main = prop => {
   return pug`
     View.root
       Intro
-      Major         
-      StaticItem
-      Discript       
+      Major  
+      StaticItems
+      Description
   `
 }
 

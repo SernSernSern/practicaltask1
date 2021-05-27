@@ -1,6 +1,4 @@
 .root
-  text-align center
-  justify-content center
   align-items center
   color rgba(255, 255, 255, 0.65)
   padding 8u 4u 2u
@@ -16,14 +14,24 @@
   color #ffffff
   font(xxxl)
   text-align center
-.small
+
+
+.description
   margin-top 2u
   color #ffffff
-  text-align center
   font(l)
   color rgba(255, 255, 255, 0.65)
   margin-top 4u
+  align-self center
   +tablet()
     font(xl)
+  &.url
+    border-bottom dotted 1px
+    border-color #ffffff
+    margin-left 2u
+
+.touchableDescription
+  align-content center
+  justify-content center
 .row 
   flex-direction row

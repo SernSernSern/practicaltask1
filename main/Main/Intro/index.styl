@@ -1,35 +1,34 @@
 .root
   padding 6u 4u 2u
+  align-items center
+  flex-direction column-reverse
   +tablet()
-    padding 8u 8u 4u
+    padding 6u 6u 2u
     flex-direction row
   +desktop()
     padding 10u 10u 6u 
   +wide()
     padding 12u 12u 8u
   
-.features
-  align-items center
-  flex-direction column-reverse
-  +tablet()
-    flex 1
-    flex-direction row
+
 .spotlight
     align-items center
     text-align center
+    
     +tablet()
+      flex 1
       align-items start
       text-align left
-      width 66%
+      
 
-.header
+.title
   text-align center
   color #636363
   margin-top 2u
   font(xxxl)
   +tablet()
     text-align left
-.small
+.description
   margin-top 4u
   color #636363
   font(xl)
@@ -37,7 +36,7 @@
   +tablet()
     text-align left
     width 90%
-.extraSmall
+.buttonText
   font(l)
   color #636363
   text-align center
@@ -60,10 +59,13 @@
   color #636363
   +tablet()
     margin-left 8u
-    height 32u 
-    width 32u
+    height 20u 
+    width 20u
   +desktop()
-    height 44u
-    width 44u
+    height 22u
+    width 22u
+  +wide()
+    height 38u
+    width 38u
   
   
