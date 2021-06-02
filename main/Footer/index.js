@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome'
 import { faDeaf } from '@fortawesome/free-solid-svg-icons'
 import './index.styl'
 
-const icon = [faDeaf, faDeaf, faDeaf, faDeaf, faDeaf]
+const icons = [faDeaf, faDeaf, faDeaf, faDeaf, faDeaf]
 
 const items = [
   { title: 'Address', description: '1234 Somewhere Road • Nashville, TN 00000 • USA' },
@@ -19,28 +19,28 @@ const Footer = () => {
         Text.title Aliquam sed mauris
         Text.description Sed lorem ipsum dolor sit amet et nullam consequat feugiat consequat magna adipiscing tempus etiam dolore veroeros. eget dapibus mauris. Cras aliquet, nisl ut viverra sollicitudin, ligula erat egestas velit, vitae tincidunt odio.
         TouchableOpacity.button
-          Text.buttonText Learn more                 
+          Text.buttonText Learn more
       View.adress
         Text.title Etiam feugiat
         each item in items
-          View.adressRow
+          View.adressRow(key=item.id)
             Text.adressTitle=item.title
             Text.adressDescription=item.description
         View.icons
-          each item, index in icon
-            TouchableOpacity.icon(styleName={first:!index})
+          each item, index in icons
+            TouchableOpacity.icon(key=item.id styleName={first:!index})
               FontAwesomeIcon(
                 icon=item
                 color="#ffffff"
-                size=24
+                size=20
               )
     View.copyright
       Text.copyrightText © Untitled. Design: 
-      TouchableOpacity
-        Text.copyrightText(styleName='url') HTML5 UP
-      Text.copyrightText . Demo Images: 
-      TouchableOpacity
-        Text.copyrightText(styleName='url') Unsplash
+        TouchableOpacity
+          Text.copyrightText(styleName='url') HTML5 UP
+        Text.copyrightText . Demo Images: 
+        TouchableOpacity
+          Text.copyrightText(styleName='url') Unsplash
   `
 }
 

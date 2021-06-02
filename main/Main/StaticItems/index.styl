@@ -45,16 +45,6 @@
     +tablet()
       border-top-right-radius 1u
       border-bottom-left-radius 0
-  &.pink
-    background-color #efa8b0
-  &.liliac
-    background-color #c79cc8
-  &.purple
-    background-color #a89cc8
-  &.blue
-    background-color #9bb2e1  
-  &.sky
-    background-color #8cc9f0
 
 .button
   margin-top 4u
@@ -102,8 +92,10 @@
 .contentText
   margin-top 6u
   color #636363
-  font(xxl)
+  font(l)
   columns 40u 2
   column-gap 4u
   text-align justify
+  +tablet()
+    font(xxl)
   

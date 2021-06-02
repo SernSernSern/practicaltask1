@@ -9,31 +9,31 @@ const items = [
     icon: faDeaf,
     count: 5700,
     text: 'Count',
-    color: 'pink'
+    color: '#efa8b0'
   },
   {
     icon: faDeaf,
     count: 5700,
     text: 'Count',
-    color: 'liliac'
+    color: '#c79cc8'
   },
   {
     icon: faDeaf,
     count: 5700,
     text: 'Count',
-    color: 'purple'
+    color: '#a89cc8'
   },
   {
     icon: faDeaf,
     count: 5700,
     text: 'Count',
-    color: 'blue'
+    color: '#9bb2e1'
   },
   {
     icon: faDeaf,
     count: 5700,
     text: 'Count',
-    color: 'sky'
+    color: '#8cc9f0'
   }
 ]
 
@@ -44,7 +44,11 @@ const StaticItems = () => {
       Text.description Donec imperdiet consequat consequat. Suspendisse feugiat congue posuere. Nulla massa urna, fermentum eget quam aliquet.
       View.styleItem
         each item, index in items
-          View.item(styleName=[{first:!index}, {last:index === items.length-1}, item.color] )
+          View.item(
+              key=index
+              styleName=[{first:!index}, {last:index === items.length-1}]
+              style={backgroundColor: item.color}
+            )
             FontAwesomeIcon(
               icon=item.icon
               size=50

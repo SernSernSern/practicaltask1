@@ -31,7 +31,7 @@ const Major = () => {
       Text.title Magna veroeros
       View.major
         each item in major
-          View.item
+          View.item(key=item.id)
             Image.image(
               source={uri: base + item.image}
             )
