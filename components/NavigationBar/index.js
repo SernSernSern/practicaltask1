@@ -4,13 +4,11 @@ import './index.styl'
 
 const data = ['Introduction', 'First Section', 'Second Section', 'Get Started']
 
-const NavigationBar = prop => {
+export default (function NavigationBar () {
   return pug`
     View.root
       each item, index in data
         TouchableOpacity.button(key=index styleName={first: !index})
           Text.title=item
   `
-}
-
-export default NavigationBar
+})

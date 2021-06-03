@@ -13,7 +13,10 @@
   text-align center
   align-items center
   +tablet()
-    width 20%
+    margin-left 4u
+    flex 1
+  &.first
+    margin-left 0
 
 .major
   margin-top 4u
@@ -26,34 +29,61 @@
     margin-top 6u
 
 .title
-  margin-top 2u
   color #636363
   text-align center
-  font(xxl)
+  font-weight bold
+  font-family 'SourceSansPro-Light'
+  font(xxxl)
   
 .itemTitle
   margin-top 2u
   color #636363
   text-align center
-  font(xl)
+  font(xxl)
+  font-family 'SourceSansPro-Light'
+
 
 .itemText
-  font(l)
+  font(m)
   margin-top 4u
   color #636363
   text-align center
+  font-family 'SourceSansPro-Light'
+  +desktop()
+    font(l)
+  +wide()
+    font(xl)
 
 .buttonText
   font(l)
   color #636363
   text-align center
+  font-family 'SourceSansPro-Light'
 
 .image
   height 16u
   width 16u
   radius(circle)
-  border solid 1px #dddddd
-  color #636363
+  border solid 2u white
+  color white
+  +tablet()
+    height 14u 
+    width 14u
+  +desktop()
+    height 22u
+    width 22u
+  +wide()
+    height 28u
+    width 28u
+
+.circleView
+  height 16u
+  width 16u
+  radius(circle)
+  align-items center
+  justify-content center
+  border solid 1px black
+  color white
   +tablet()
     height 14u 
     width 14u
@@ -72,3 +102,8 @@
   justify-content center
   border solid 1px #dddddd
   radius(l)
+
+.border
+  border solid 2px #dddddd
+  width 18u
+  margin-top 4u

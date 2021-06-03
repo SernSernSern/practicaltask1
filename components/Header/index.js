@@ -3,7 +3,7 @@ import { View, Text, TouchableOpacity, Image } from 'react-native'
 import { BASE_URL } from '@env'
 import './index.styl'
 
-const Header = () => {
+export default (function Header () {
   const url = '/logo.png'
 
   const base = BASE_URL
@@ -19,6 +19,4 @@ const Header = () => {
           TouchableOpacity
             Text.description.url HTML5 UP
   `
-}
-
-export default Header
+})

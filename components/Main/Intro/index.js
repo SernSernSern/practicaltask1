@@ -11,12 +11,14 @@ const Intro = () => {
     View.root
       View.spotlight
         Text.title Ipsum sed adipiscing
+        View.border
         Text.description Sed lorem ipsum dolor sit amet nullam consequat feugiat consequat magna adipiscing magna etiam amet veroeros. Lorem ipsum dolor tempus sit cursus. Tempus nisl et nullam lorem ipsum dolor sit amet aliquam.
         TouchableOpacity.button
           Text.buttonText Learn more
-      Image.image(
-        source={uri: base + url}
-      )
+      View.circleView    
+        Image.image(
+          source={uri: base + url}
+        )
   `
 }
 

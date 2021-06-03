@@ -6,7 +6,7 @@ import Intro from './Intro'
 import Description from './Description'
 import './index.styl'
 
-const Main = prop => {
+export default (function Main () {
   return pug`
     View.root
       Intro
@@ -14,6 +14,4 @@ const Main = prop => {
       StaticItems
       Description
   `
-}
-
-export default Main
+})

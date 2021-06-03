@@ -8,6 +8,7 @@ const Description = () => {
   return pug`
     View.root
       Text.title Congue imperdiet
+      View.border
       Text.description Donec imperdiet consequat consequat. Suspendisse feugiat congue posuere. Nulla massa urna, fermentum eget quam aliquet.
       View.row
         each item, index in button

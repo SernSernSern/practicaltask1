@@ -29,12 +29,14 @@ const Major = () => {
   return pug`
     View.root
       Text.title Magna veroeros
+      View.border
       View.major
-        each item in major
-          View.item(key=item.id)
-            Image.image(
-              source={uri: base + item.image}
-            )
+        each item, index in major
+          View.item(key=index styleName={first:!index})
+            View.circleView  
+              Image.image(
+                  source={uri: base + item.image}
+              )
             Text.itemTitle=item.head
             Text.itemText=item.texts
       TouchableOpacity.button

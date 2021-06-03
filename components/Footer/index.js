@@ -12,7 +12,7 @@ const items = [
   { title: 'Email', description: 'information@untitled.tld' }
 ]
 
-const Footer = () => {
+export default (function Footer () {
   return pug`
     View.root
       View.about
@@ -22,13 +22,13 @@ const Footer = () => {
           Text.buttonText Learn more
       View.adress
         Text.title Etiam feugiat
-        each item in items
-          View.adressRow(key=item.id)
+        each item, index in items
+          View.adressRow(key=index)
             Text.adressTitle=item.title
             Text.adressDescription=item.description
         View.icons
           each item, index in icons
-            TouchableOpacity.icon(key=item.id styleName={first:!index})
+            TouchableOpacity.icon(key=index styleName={first:!index})
               FontAwesomeIcon(
                 icon=item
                 color="#ffffff"
@@ -42,6 +42,4 @@ const Footer = () => {
         TouchableOpacity
           Text.copyrightText(styleName='url') Unsplash
   `
-}
-
-export default Footer
+})

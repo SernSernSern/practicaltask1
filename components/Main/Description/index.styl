@@ -13,23 +13,31 @@
 
 .title
   color #636363
+  font-family 'SourceSansPro-Light'
+  font-weight bold
   margin-top 2u
   font(xxxl)
 
 .description
   color #636363
   text-align center
+  font-family 'SourceSansPro-Light'
   margin-top 4u
-  width 100%
-  font(xl)
+  font(xxl)
+  line-height 6u
   +tablet()
-    width 70%
+      width 40u
+  +desktop()
+      width 60u
+  +wide()
+      width 84u 
   &.first
     color #ffffff
 
 .buttonText
   color #636363
   text-align center
+  font-family 'SourceSansPro-Light'
   font(l)
   &.first
     color #ffffff
@@ -51,3 +59,9 @@
   &.first
     margin-left 0
     background-color #9acff2
+
+.border
+  border solid 2px #dddddd
+  width 18u
+  margin-top 4u
+  align-self center

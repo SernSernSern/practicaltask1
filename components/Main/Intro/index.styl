@@ -24,6 +24,8 @@
 .title
   text-align center
   color #636363
+  font-family 'SourceSansPro-Light'
+  font-weight bold
   margin-top 2u
   font(xxxl)
   +tablet()
@@ -31,14 +33,16 @@
 .description
   margin-top 4u
   color #636363
-  font(xl)
+  font-family 'SourceSansPro-Light'
+  font(xxl)
   text-align center
   +tablet()
     text-align left
-    width 90%
+    
 .buttonText
   font(l)
   color #636363
+  font-family 'SourceSansPro-Light'
   text-align center
 
 .button
@@ -55,17 +59,38 @@
   height 24u
   width 24u
   radius(circle)
-  border solid 1px #dddddd
+  border solid 2u white
   color #636363
   +tablet()
-    margin-left 8u
-    height 20u 
-    width 20u
+    height 24u 
+    width 24u
   +desktop()
-    height 22u
-    width 22u
+    height 30u
+    width 30u
   +wide()
-    height 38u
-    width 38u
+    height 46u
+    width 46u
   
-  
+.circleView
+  height 24u
+  width 24u
+  radius(circle)
+  align-items center
+  justify-content center
+  border solid 1px black
+  color white
+  +tablet()
+    margin-left 8u
+    height 24u 
+    width 24u
+  +desktop()
+    height 30u
+    width 30u
+  +wide()
+    height 46u
+    width 46u
+
+.border
+  border solid 2px #dddddd
+  width 18u
+  margin-top 4u

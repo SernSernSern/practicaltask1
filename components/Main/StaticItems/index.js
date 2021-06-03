@@ -41,6 +41,7 @@ const StaticItems = () => {
   return pug`
     View.root
       Text.title Ipsum consequat
+      View.border
       Text.description Donec imperdiet consequat consequat. Suspendisse feugiat congue posuere. Nulla massa urna, fermentum eget quam aliquet.
       View.styleItem
         each item, index in items
